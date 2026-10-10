@@ -1,0 +1,21 @@
+PRODUCT REVIEW INTELLIGENCE SYSTEM
+PHASE 6 — BiLSTM SENTIMENT MODEL
+
+Test Accuracy: 0.8879
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Negative       0.75      0.82      0.78      2926
+     Neutral       0.48      0.33      0.39      1596
+    Positive       0.95      0.96      0.95     15428
+
+    accuracy                           0.89     19950
+   macro avg       0.72      0.70      0.71     19950
+weighted avg       0.88      0.89      0.88     19950
+
+
+Confusion Matrix:
+[[ 2413   223   290]
+ [  524   531   541]
+ [  301   358 14769]]

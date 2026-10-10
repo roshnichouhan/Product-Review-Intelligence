@@ -1,0 +1,68 @@
+PRODUCT REVIEW INTELLIGENCE SYSTEM
+PHASE 8 - MODEL EVALUATION AND COMPARISON
+======================================================================
+
+MODEL COMPARISON
+
+                       Model  Accuracy  Precision   Recall  F1-Score
+TF-IDF + Logistic Regression  0.889273   0.872803 0.889273  0.875827
+                      BiLSTM  0.887870   0.879638 0.887870  0.882401
+          BiLSTM + Attention  0.886165   0.869829 0.886165  0.874646
+
+======================================================================
+TF-IDF + Logistic Regression
+======================================================================
+
+              precision    recall  f1-score   support
+
+    Negative       0.79      0.77      0.78      2926
+     Neutral       0.55      0.25      0.35      1596
+    Positive       0.92      0.98      0.95     15428
+
+    accuracy                           0.89     19950
+   macro avg       0.75      0.67      0.69     19950
+weighted avg       0.87      0.89      0.88     19950
+
+Confusion Matrix:
+[[ 2265   161   500]
+ [  416   400   780]
+ [  191   161 15076]]
+
+======================================================================
+BiLSTM
+======================================================================
+
+              precision    recall  f1-score   support
+
+    Negative       0.75      0.82      0.78      2926
+     Neutral       0.48      0.33      0.39      1596
+    Positive       0.95      0.96      0.95     15428
+
+    accuracy                           0.89     19950
+   macro avg       0.72      0.70      0.71     19950
+weighted avg       0.88      0.89      0.88     19950
+
+Confusion Matrix:
+[[ 2413   223   290]
+ [  524   531   541]
+ [  301   358 14769]]
+
+======================================================================
+BiLSTM + Attention
+======================================================================
+
+              precision    recall  f1-score   support
+
+    Negative       0.78      0.76      0.77      2926
+     Neutral       0.50      0.27      0.35      1596
+    Positive       0.92      0.97      0.95     15428
+
+    accuracy                           0.89     19950
+   macro avg       0.74      0.67      0.69     19950
+weighted avg       0.87      0.89      0.87     19950
+
+Confusion Matrix:
+[[ 2221   227   478]
+ [  414   429   753]
+ [  200   199 15029]]
+
