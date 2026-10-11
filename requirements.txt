@@ -6,7 +6,11 @@ pandas==2.3.3
 plotly==6.6.0
 scikit-learn==1.7.2
 <<<<<<< HEAD
+<<<<<<< HEAD
 tensorflow==2.20.0
 =======
 tensorflow==2.21.0
 >>>>>>> 9d386a6 (Fix Streamlit deployment dependencies)
+=======
+tensorflow==2.20.0
+>>>>>>> bcf180c (Update compatible TensorFlow dependency)
