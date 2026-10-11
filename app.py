@@ -37,8 +37,12 @@ from config.aspects import ASPECTS
 MODEL_PATH = PROJECT_ROOT / "models" / "sentiment_attention_bilstm.keras"
 TOKENIZER_PATH = PROJECT_ROOT / "models" / "tokenizer.pkl"
 LABEL_ENCODER_PATH = PROJECT_ROOT / "models" / "label_encoder.pkl"
-DATA_PATH = PROJECT_ROOT / "data" / "processed" / "reviews_processed.csv"
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
+DATA_PATH = BASE_DIR / "data" / "processed" / "reviews_processed.csv"
 MAX_LENGTH = 200
 
 
