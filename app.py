@@ -787,8 +787,7 @@ def load_dataset():
             f"Dataset not found at: {DATA_PATH}"
         )
 
-    df = pd.read_csv(DATA_PATH)
-
+    return pd.read_csv(DATA_PATH)
     if df.empty:
         raise ValueError("The dataset CSV is empty.")
 
